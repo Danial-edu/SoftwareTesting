@@ -4,8 +4,7 @@ public class ThreadCheckArray implements Runnable
 	private boolean [] winArray;
 	SharedData sd;
 	int[] array;
-	int b,c;
-	//just a comment
+	int b;
 	public ThreadCheckArray(SharedData sd) 
 	{
 		this.sd = sd;	
