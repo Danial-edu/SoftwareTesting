@@ -4,6 +4,7 @@ public class SharedData
 	private boolean [] winArray;
 	private boolean flag;
 	private final int b;
+	private String winner;
 	
 	public SharedData(int[] array, int b) {
 		
@@ -39,5 +40,10 @@ public class SharedData
 	public void setFlag(boolean flag) {
 		this.flag = flag;
 	}
+	
+	public String getWinner() {
+		return winner;
+	}
+	
 
 }
