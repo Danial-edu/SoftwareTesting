@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 import java.util.ArrayList;
 
+/**
+ * The class creates 2 threads that run ThreadCheckArray and asks user and saves required variables
+ */
 public class TestThreadCheckArray {
 	public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
