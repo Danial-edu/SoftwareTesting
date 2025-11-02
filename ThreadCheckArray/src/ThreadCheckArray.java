@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+/** class that implement the runnable interface using sync methods */
 public class ThreadCheckArray implements Runnable 
 {
 	private boolean flag;
@@ -7,6 +8,11 @@ public class ThreadCheckArray implements Runnable
 	SharedData sd;
     ArrayList<Integer> array;//change from int to arrayList integers 
 	int b;
+	
+	/**The Method check the shared data
+	 * 
+	 * @param sd
+	 */
 	public ThreadCheckArray(SharedData sd) 
 	{
 		this.sd = sd;	
@@ -18,6 +24,11 @@ public class ThreadCheckArray implements Runnable
 		winArray = new boolean[array.size()];
 	}
 	
+	/** The function set and change the flags
+	 * 
+	 * @param n
+	 * @param b
+	 */
 	void rec(int n, int b)
 	{
 		synchronized (sd) 
@@ -51,6 +62,9 @@ public class ThreadCheckArray implements Runnable
 		rec(n-1, b);
 	}
 
+	/** The function run the threads
+	 * 
+	 */
 	public void run() {
 		if (array.size() != 1)
 			if (Thread.currentThread().getName().equals("thread1"))
