@@ -24,7 +24,7 @@ public class ThreadCheckArray implements Runnable
 		winArray = new boolean[array.size()];
 	}
 	
-	/** The function set and change the flags
+	/** The function set and change The flags
 	 * 
 	 * @param n
 	 * @param b
