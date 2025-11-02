@@ -9,9 +9,9 @@ public class ThreadCheckArray implements Runnable
     ArrayList<Integer> array;//change from int to arrayList integers 
 	int b;
 	
-	/**The Method check the shared data
+	/**The Method check the shared data and update the winArray
 	 * 
-	 * @param sd
+	 * @param sd 
 	 */
 	public ThreadCheckArray(SharedData sd) 
 	{
