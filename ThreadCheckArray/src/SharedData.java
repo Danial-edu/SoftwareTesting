@@ -1,11 +1,10 @@
-package pack1;
 import java.util.ArrayList;
 /**
  * 
  */
 public class SharedData {
 	private ArrayList<Integer> array;
-	private boolean  winArray;
+	private boolean [] winArray;
 	private boolean flag;
 	private final int b;
 	
@@ -14,12 +13,12 @@ public class SharedData {
 		this.b = b;
 	}
 
-	public boolean getWinArray() 
+	public boolean[] getWinArray() 
 	{
 		return winArray;
 	}
 
-	public void setWinArray(boolean winArray) 
+	public void setWinArray(boolean [] winArray) 
 	{
 		this.winArray = winArray;
 	}
